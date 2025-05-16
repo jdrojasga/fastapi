@@ -1,0 +1,36 @@
+[project]
+name = "apis"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "fastapi>=0.115.12",
+]
+
+[project.scripts]
+api = "main:main"
+
+[tool.ruff]
+# Allow lines to be as long as 88.
+line-length = 88
+
+[tool.ruff.lint]
+select = [
+    # pydocstyle
+    "D",
+    # pycodestyle
+    "E",
+    # Pyflakes 
+    "F",
+    # isort
+    "I",
+    # pandas-vet
+    "PD",
+]
+
+pydocstyle.convention = "google"
+ignore-init-module-imports = true
+
+[dependency-groups]
+dev = ["ruff>=0.11.8"]
