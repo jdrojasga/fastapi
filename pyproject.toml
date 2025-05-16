@@ -5,11 +5,11 @@ description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.11"
 dependencies = [
-    "fastapi>=0.115.12",
+    "fastapi[standard]>=0.115.12",
 ]
 
 [project.scripts]
-api = "main:main"
+api = "main:run"
 
 [tool.ruff]
 # Allow lines to be as long as 88.
