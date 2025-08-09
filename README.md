@@ -29,4 +29,6 @@ api
 deactivate
 ```
 
-When you are working in VSCode and need to configure a Python interpreter to execute anything, just select the virtual environment created with uv help: ```('.venv': venv)```.
+When you are working in VSCode and need to configure a Python interpreter to execute anything, just select the virtual environment created with uv help: ```('.venv': venv)```. 
+
+If you want to work in the terminal just need to execute step 3 to be able to activate the virtual environment, and step 6 to deactivate.
